@@ -40,12 +40,6 @@ aside {
     padding: 30px;
 }
 
-#add-book {
-    font-size: 20px;
-    padding: 10px 15px 10px 15px;
-    border-radius: 8px;
-}
-
 footer {
     grid-column: span 3;
     border-top: 1px solid #ddd;
@@ -65,7 +59,6 @@ footer {
 .modal {
     padding: 1em;
     position: absolute;
-    width: 200px;
     max-width: 100%;
     margin: auto;
     text-align: center;
@@ -73,17 +66,24 @@ footer {
     border: 1px solid #f4f4f5;
     background-color: #f4f4f5;
     padding: 50px;
+    padding-top: 30px;
+}
+
+.modal div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
 }
 
 .modal h2 {
     margin-bottom: 30px;
     font-size: 30px;
+    user-select: none;
 }
 
 .form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
 }
 
 .form input {
@@ -95,24 +95,49 @@ footer {
     outline: none;
 }
 
-.submit-button {
-    background-color: #86efac;
-    border: 2px solid #86efac;
-    border-radius: 10px;
-    font-size: 20px;
-    padding: 15px 25px;
-    margin-top: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+.button {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #fa6400;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
 }
 
-.submit-button:hover {
-    border-color: black;
+.button:hover,
+.button:focus {
+  background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
 }
 
-.submit-button:active {
-    border-color: green;
+.button:hover {
+  transform: translateY(-1px);
+}
+
+.button:active {
+  background-color: #c85000;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
 }
 
 .modal::backdrop {
@@ -120,4 +145,31 @@ footer {
     /* background: linear-gradient(45deg, red, blue); */
     opacity: .4;
     /* backdrop-filter: blur(1px);  */
+}
+
+.close-button {
+    background: #eee;
+    border: 2px solid #888;
+    border-radius: 50%;
+    color: #888;
+    font-weight: 400;
+    font-size: 16px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: end;
+    user-select: none;
+}
+
+.close-button:hover {
+    border-color: black;
+    transform: translateY(-1px);
+}
+
+.close-button:active {
+    border-color: black;
+    box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+    transform: translateY(0);
 }

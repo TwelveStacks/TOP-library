@@ -4,7 +4,7 @@
 
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-columns: 1fr auto;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
 }
@@ -29,7 +29,7 @@ article {
 
 .book-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-auto-rows: 200px;
     gap: 2rem;
     padding: 30px;
@@ -193,4 +193,19 @@ footer {
     border-color: black;
     box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
     transform: translateY(0);
+}
+
+.fa-github{
+    margin: 10px;
+    font-size: 30px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer svg:hover {
+    filter: invert(15%) sepia(85%) saturate(2883%) hue-rotate(348deg) brightness(122%) contrast(94%);
 }

@@ -8,10 +8,6 @@ addBook.addEventListener("click", () => {
     modal.showModal();
 });
 
-submitButton.addEventListener('click', () => {
-    modal.close();
-});
-
 function Book() {
   // the constructor...
 }

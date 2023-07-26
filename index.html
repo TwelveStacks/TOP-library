@@ -40,16 +40,14 @@
             <p>This book is by:</p>
           </div>
         </div>
-        <div class="modal-container">
-          <dialog class="modal" id="modal">
-            <h2>Add new book</h2>
-            <form class="form" method="dialog">
-              <input type="text" placeholder="Title" />
-              <input type="text" placeholder="Author" />
-              <button class="submit-button">Submit</button>
-            </form>
-          </dialog>
-        </div>
+        <dialog class="modal" id="modal">
+          <h2>Add new book</h2>
+          <form class="form" method="dialog">
+            <input type="text" placeholder="Title" required />
+            <input type="text" placeholder="Author" required />
+            <button class="submit-button">Submit</button>
+          </form>
+        </dialog>
       </article>
       <aside>
         <button id="add-book">Add Book</button>

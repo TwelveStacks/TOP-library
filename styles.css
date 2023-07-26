@@ -14,7 +14,8 @@ header {
     border-bottom: 1px solid #ddd;
     text-align: center;
     padding: 30px;
-    background-color: #84cc16;
+    background-color: #64748b;
+    color: white;
 }
 
 nav {
@@ -23,14 +24,14 @@ nav {
 }
 
 article {
-    background-color: #f8fafc;
+    background-color: #d4d4d8;
 }
 
 .book-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-auto-rows: 200px;
-    gap: 2rem 1em;
+    gap: 2rem;
     padding: 30px;
 }
 
@@ -53,8 +54,8 @@ footer {
 }
 
 .book {
-    border: 1px solid #fef08a;
-    background-color: #fef08a;
+    border: 1px solid #f9fafb;
+    background-color: #f9fafb;
     border-radius: 12px;
     padding: 20px;
     display: grid;
@@ -68,17 +69,55 @@ footer {
     max-width: 100%;
     margin: auto;
     text-align: center;
+    border-radius: 10px;
+    border: 1px solid #f4f4f5;
+    background-color: #f4f4f5;
+    padding: 50px;
+}
+
+.modal h2 {
+    margin-bottom: 30px;
+    font-size: 30px;
 }
 
 .form {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
+}
+
+.form input {
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    outline: none;
+}
+
+.submit-button {
+    background-color: #86efac;
+    border: 2px solid #86efac;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 15px 25px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.submit-button:hover {
+    border-color: black;
+}
+
+.submit-button:active {
+    border-color: green;
 }
 
 .modal::backdrop {
-    /* background: rgb(0 0 0 / .4); */
-    background: linear-gradient(45deg, red, blue);
+    background: rgb(0 0 0 / .4);
+    /* background: linear-gradient(45deg, red, blue); */
     opacity: .4;
-    backdrop-filter: blur(1px); 
+    /* backdrop-filter: blur(1px);  */
 }

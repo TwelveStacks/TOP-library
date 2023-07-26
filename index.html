@@ -14,33 +14,45 @@
       </header>
       <nav>Nav</nav>
       <article>
-        <div class="book">
-          <h3>Book</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex,
-            accusamus.
-          </p>
-          <p>This book is by:</p>
+        <div class="book-container">
+          <div class="book">
+            <h3>Book</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex,
+              accusamus.
+            </p>
+            <p>This book is by:</p>
+          </div>
+          <div class="book">
+            <h3>Book</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex,
+              accusamus.
+            </p>
+            <p>This book is by:</p>
+          </div>
+          <div class="book">
+            <h3>Book</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex,
+              accusamus.
+            </p>
+            <p>This book is by:</p>
+          </div>
         </div>
-        <div class="book">
-          <h3>Book</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex,
-            accusamus.
-          </p>
-          <p>This book is by:</p>
-        </div>
-        <div class="book">
-          <h3>Book</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex,
-            accusamus.
-          </p>
-          <p>This book is by:</p>
+        <div class="modal-container">
+          <dialog class="modal" id="modal">
+            <h2>Add new book</h2>
+            <form class="form" method="dialog">
+              <input type="text" placeholder="Title" />
+              <input type="text" placeholder="Author" />
+              <button class="submit-button">Submit</button>
+            </form>
+          </dialog>
         </div>
       </article>
       <aside>
-        <button>Add Book</button>
+        <button id="add-book">Add Book</button>
       </aside>
       <footer>Footer</footer>
     </div>

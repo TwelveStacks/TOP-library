@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Library</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="scripts.js" defer></script>
   </head>
@@ -44,15 +44,40 @@
             <div class="close-button">✖</div>
             <div>
               <h2>Add new book</h2>
-              <form class="form" method="dialog">
-                <input type="text" placeholder="Title" required />
-                <input type="text" placeholder="Author" required />
-                <input type="number" placeholder="Pages" required />
+              <form class="form" method="dialog" id="form">
+                <input
+                  type="text"
+                  placeholder="Title"
+                  name="title"
+                  id="title"
+                  required
+                />
+                <input
+                  type="text"
+                  placeholder="Author"
+                  name="author"
+                  id="author"
+                  required
+                />
+                <input
+                  type="number"
+                  placeholder="Pages"
+                  name="pages"
+                  id="pages"
+                  required
+                />
                 <div class="checkbox-container">
                   <label for="read">Read</label>
-                  <input type="checkbox" name="read" class="read-checkbox" />
+                  <input
+                    type="checkbox"
+                    name="read"
+                    class="read-checkbox"
+                    value="false"
+                  />
                 </div>
-                <button class="button" id="submit-button">Submit</button>
+                <button type="submit" class="button" id="submit-button">
+                  Submit
+                </button>
               </form>
             </div>
           </div>

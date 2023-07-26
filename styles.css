@@ -86,7 +86,7 @@ footer {
     gap: 20px;
 }
 
-.form input {
+.form input:not(:nth-last-child(2)) {
     padding: 20px;
     font-size: 20px;
     border-radius: 10px;
@@ -94,6 +94,27 @@ footer {
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     outline: none;
 }
+
+.checkbox-container {
+    display: flex;
+    gap: 1rem; 
+    align-items: center;
+    justify-content: center;
+}
+
+.checkbox-container label {
+    font-size: 30px;
+}
+
+.read-checkbox {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 28px;
+    width: 28px;
+    display: block;
+} 
 
 .button {
   align-items: center;

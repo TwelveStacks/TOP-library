@@ -31,6 +31,7 @@ article {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+    padding: 10px;
     /* display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-auto-rows: 200px;

@@ -221,6 +221,11 @@ footer svg:hover {
     border-radius: 10px;
 }
 
-.read-button:active {
-    background-color: red;
+.remove {
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: #fa6400;
+    color: white;
+    border: none;
+    border-radius: 10px;
 }

@@ -71,14 +71,15 @@ function createBook(book) {
     bookTitle.textContent = "Title: " + book.name;
     bookAuthor.textContent = "Author: " + book.author;
     bookPages.textContent = "Pages: " + book.pages;
+    removeBook.textContent = "Remove"
 
     if (book.read === true) {
         bookRead.textContent = "Read"; 
-        bookRead.style.backgroundColor = "green";
+        bookRead.style.backgroundColor = "#22c55e";
     }
     else if (book.read === false) {
         bookRead.textContent = "Not read"
-        bookRead.style.backgroundColor = "red";
+        bookRead.style.backgroundColor = "#f43f5e";
     }
     
     bookRead.addEventListener("click", ()=> {
@@ -86,14 +87,18 @@ function createBook(book) {
         if(bookRead.textContent == "Read") {
             console.log("Change button color to red")
             bookRead.textContent = "Not read";
-            bookRead.style.backgroundColor = "red";
+            bookRead.style.backgroundColor = "#f43f5e";
             
         }
         else if (bookRead.textContent == "Not read") {
             console.log("Change button color to green")
             bookRead.textContent = "Read";
-            bookRead.style.backgroundColor = "green";
+            bookRead.style.backgroundColor = "#22c55e";
         }
+    })
+
+    removeBook.addEventListener("click", ()=> {
+        bookDiv.remove();
     })
 
     bookContainer.append(bookDiv);
@@ -101,6 +106,7 @@ function createBook(book) {
     bookDiv.appendChild(bookAuthor);
     bookDiv.appendChild(bookPages);
     bookDiv.appendChild(bookRead);
+    bookDiv.appendChild(removeBook);
 }
 
 

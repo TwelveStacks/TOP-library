@@ -28,11 +28,14 @@ article {
 }
 
 .book-container {
-    display: grid;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    /* display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-auto-rows: 200px;
     gap: 2rem;
-    padding: 30px;
+    padding: 30px; */
 }
 
 aside {
@@ -51,7 +54,8 @@ footer {
     border: 1px solid #f9fafb;
     background-color: #f9fafb;
     border-radius: 12px;
-    padding: 20px;
+    min-height: 100%;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     gap: 10px;

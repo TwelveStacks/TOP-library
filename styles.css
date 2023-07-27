@@ -52,8 +52,11 @@ footer {
     background-color: #f9fafb;
     border-radius: 12px;
     padding: 20px;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 .modal {
@@ -164,8 +167,8 @@ footer {
 .modal::backdrop {
     background: rgb(0 0 0 / .4);
     /* background: linear-gradient(45deg, red, blue); */
-    opacity: .4;
-    /* backdrop-filter: blur(1px);  */
+    opacity: 1;
+    backdrop-filter: blur(1px); 
 }
 
 .close-button {
@@ -208,4 +211,16 @@ footer {
 
 footer svg:hover {
     filter: invert(15%) sepia(85%) saturate(2883%) hue-rotate(348deg) brightness(122%) contrast(94%);
+}
+
+.read-button {
+    font-size: 20px;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+.read-button:active {
+    background-color: red;
 }

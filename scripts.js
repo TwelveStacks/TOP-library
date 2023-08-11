@@ -30,21 +30,17 @@ form.addEventListener("submit", () => {
     createBook(newBook);
 });
 
-function Book(name, author, pages, read) {
-    this.name = name;
-    this.author = author;
-    this.pages = pages;
-    this.read = read;
+class Book {
+    constructor(name, author, pages, read) {
+        this.name = name;
+        this.author = author;
+        this.pages = pages;
+        this.read = read;
+    }
 }
 
 function addBookToLibrary(item) {
     myLibrary.push(item);
-}
-
-function createBook() {
-    this.myLibrary.forEach(book => {
-        console.log(book);
-    });
 }
 
 function resetForm() {
